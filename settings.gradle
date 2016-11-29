@@ -1,1 +1,1 @@
-include ':rxmarkdown'
+include ':rxmarkdown',':app'

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toolbar.setTitle("RxMarkdown");
         findViewById(R.id.btn_edit_show).setOnClickListener(this);
         findViewById(R.id.btn_compare).setOnClickListener(this);
+        findViewById(R.id.btn_list).setOnClickListener(this);
     }
 
     @Override
@@ -27,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_edit_show:
                 startActivity(new Intent(this, EditActivity.class));
+                break;
+            case R.id.btn_list:
+                startActivity(new Intent(this, ListviewActivity.class));
                 break;
         }
     }
